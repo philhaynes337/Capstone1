@@ -1,0 +1,9 @@
+.menu-btn {
+	height: 75px;
+	width: 200px;
+}
+
+.group {
+	display: flex;;
+	flex-direction: row;
+}

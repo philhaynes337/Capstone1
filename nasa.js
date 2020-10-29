@@ -45,6 +45,8 @@ function nasaBtn() {
     event.preventDefault();
   
    	console.log("This button works!")
+    $('#target').empty();
+    $('#target-2').empty();
 
    	fetchNasa();
 

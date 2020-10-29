@@ -1,6 +1,11 @@
 'use strict';
 
 
+var temp 
+
+
+function loadPicOfDay(urlString) {
+
 let cd = new Date();
 	cd.setDate(cd.getDate() - 1);
 
@@ -12,18 +17,15 @@ let cd = new Date();
 
 	let apiCorrectDateUrl = 'https://api.nasa.gov/planetary/apod?date='+ convertedDate +'&api_key=OJv7MhWfhxFe00mIV6Z6UkRJMflDM0GU7JGQigPu';
 
-	loadPicOfDay(apiCorrectDateUrl);
 
 
 
-function loadPicOfDay(urlString) {
-
-
-	console.log("This is the url string: " + urlString);
-	fetch(urlString)
+	console.log("This is the url string: " + apiCorrectDateUrl);
+	fetch(apiCorrectDateUrl)
 		.then(response => {
 			if (response.ok) {
 				console.log("Connected to NASA's Picture of the Day!")
+				//temp = response.json();
 
 				return response.json();
 			}
@@ -66,7 +68,22 @@ function loadDisplayPictureOfTheDay(data) {
 
 		console.log(data.url);
 		let nasaPodHtml = document.getElementById('target');
-		nasaPodHtml.innerHTML = '<img src="' + data.url + '">';
+		nasaPodHtml.innerHTML = `
+
+
+		<img src="${data.url}">
+		<div id="js-pod-description">
+		<h2>${data.title}</h2>
+			<ul>
+				<li>Explanation:  ${data.explanation}</li>
+				<li>Copyright: ${data.copyright}</li>
+				<li>Date: ${data.date}</li>
+				<li>HD Version: <a href="${data.hdurl}" target="_blank">HD Image Link</a></li>
+		</div>
+
+
+
+		`;
 }
 
 

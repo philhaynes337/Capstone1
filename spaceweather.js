@@ -18,7 +18,7 @@ function showNasaSpaceWeather(data) {
 		<ul>
 			<li> Message Type: ${data[0].messageType} </li>
 			<li> Message ID: ${data[0].messageID}</li>
-			<li> Message Link: <a href="${data[0].messageURL}" target="_blank">${data[0].messageURL}</a></li>
+			<li> Message Details: <a href="${data[0].messageURL}" target="_blank">Link</a></li>
 			<li> Message Issue Time: ${data[0].messageIssueTime}</li>
 			<li> Message: ${data[0].messageBody}</li>
 		</ul>

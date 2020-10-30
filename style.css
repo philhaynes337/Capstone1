@@ -1,20 +1,110 @@
+
+header, main, footer {
+	width: 600px;
+	margin: auto;
+	font-family: courier;
+}
+
+header {
+	font-weight: bold;
+	padding: 5px;
+	text-align: center;
+	font-size: 50px;
+
+
+}
+
+
+
+main {
+	height: auto;
+	padding: 5px;
+}
+
+footer {
+	height: auto;
+	padding: 5px;
+}
+
+
+h1 {
+
+	font-weight: bold;
+	font-size: 50px;
+	
+
+}
+
 .menu-btn {
-	height: 75px;
-	width: 200px;
+	height: 30px;
+	width: 99px;
+	border-radius: 15px;
+	justify-content: center;
+	font-weight: bolder;
+	font-size: 12px;
 }
 
 .group {
-	display: flex;;
+	display: flex;
 	flex-direction: row;
+	border-color: black;
+	border-width: 5px;
+	border-style: solid;
 }
 
 .item {
-	display: flex;
+	display: inline-flex;
 	flex-direction: column;
+	vertical-align: top;
+	border-style: solid;
+	border-color: black;
+	border-width: 5px;
 }
 
 img {
-	height: 500px;
-	width: 500px;
+	height: 400px;
+	width: 400px;
 	border-radius: 20px;
+}
+
+
+
+.menu {
+	margin: auto;
+	width: 100px; 
+	display: inline-flex;
+	border-color: black;
+	border-width: 10px;
+	border-spacing: 10px;
+	text-align: left;
+	vertical-align: top;
+	vertical-align: text-top;
+
+
+}
+
+.target {
+
+	margin: auto;
+	width: 400px;
+	height: auto;
+
+}
+
+.target-2 {
+
+	margin: auto;
+	/* width: 100; */
+	height: auto;
+}
+
+
+@media all and (min-width: 600px) {
+
+
+
+
+
+
+
 }

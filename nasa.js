@@ -59,8 +59,8 @@ function nasaBtn() {
 function all() {
 	console.log("App Started");
   console.log("NASA Started!")
-	nasaBtn();
-  resutlsNasa();
+	//nasaBtn();
+  //resutlsNasa();
 }
 
 $(all);

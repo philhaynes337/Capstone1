@@ -86,12 +86,25 @@ function loadDisplayPictureOfTheDay(data) {
 		`;
 }
 
+function pictureOfTheDayBtn() {
+	$('#images').submit(event => {
+		event.preventDefault();
+		console.log("NASA POD Button Works!");
+		$('#target').empty();
+
+
+		loadPicOfDay();
+
+	})
+}
+
 
 function all() {
 	//dateConvert();
-	loadPicOfDay();
+	//loadPicOfDay();
 	//dateConvert();
 	//loadDisplayPictureOfTheDay();
+	pictureOfTheDayBtn();
 
 }
 

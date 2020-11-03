@@ -1,3 +1,177 @@
+-
+html {
+  /*background: url(https://upload.wikimedia.org/wikipedia/commons/thumb/8/80/NGC_2818_by_the_Hubble_Space_Telescope.jpg/1280px-NGC_2818_by_the_Hubble_Space_Telescope.jpg) no-repeat 50% 50%; */
+  /* background-size: cover; */
+  /* position: fixed; */
+  background-color: black;
+  /* top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0; */
+  font-family:  'Lato', sans-serif;
+  color: white;
+  font-weight: 50;
+}
+body {
+  background-color: black;
+  color: white;
+
+}
+
+.cosmos {
+  padding: 0;
+  /* margin: 0; */
+  /* top: 50%; 
+  left: 0;
+  right: 0;*/
+  font-size: 250%;
+  /* margin-top: -66px; */
+  text-align: center;
+  /* perspective: 600px; */
+  margin: 0 auto;
+  display: block;
+
+}
+.cosmos span {
+  width: auto;
+  display: inline-block;
+  float: left;
+  animation-duration: 6s;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease-out;
+  opacity: 0
+}
+.cosmos span:nth-child(1) {
+  color: #555;
+  animation-name: animM;
+}
+.cosmos span:nth-child(2) {
+  color: #555;
+  animation-name: animI1;
+}
+.cosmos span:nth-child(3) {
+  color: #555;
+  animation-name: animS1;
+}
+.cosmos span:nth-child(4) {
+  color: #555;
+  animation-name: animS2;
+}
+.cosmos span:nth-child(5) {
+  color: #555;
+  animation-name: animI2;
+}
+.cosmos span:nth-child(6) {
+  animation-name: animO1;
+}
+.cosmos span:nth-child(7) {
+  color: #555;
+	animation-name: animN1;
+}
+.cosmos span:nth-child(8) {
+	animation-name: animSP;
+
+}
+
+.cosmos span:nth-child(9) {
+  color: #555;
+  animation-name: animC1;
+}
+.cosmos span:nth-child(10) {
+  color: #555;
+  animation-name: animO2;
+}
+.cosmos span:nth-child(11) {
+  color: #555;
+  animation-name: animN2;
+}
+.cosmos span:nth-child(12) {
+  color: #555;
+  animation-name: animT1;
+}
+.cosmos span:nth-child(13) {
+  color: #555;
+  animation-name: animR1;
+}
+.cosmos span:nth-child(14) {
+  animation-name: animO3;
+}
+.cosmos span:nth-child(15) {
+  color: #555;
+	animation-name: animL1;
+}
+
+@keyframes animM {
+  0% , 90% { transform: translate3D( 240%,0,-400px ) rotateY( 85deg ); opacity: 0 }
+  10%, 80% { transform: translate3D( 220%,0,0 ) rotateY( 40deg ); opacity: 1; }
+  32%, 58% { transform: translate3D( 0,0,0 ) rotateY( 0deg ); }
+}
+@keyframes animI1 {
+  15%, 75% { transform: translate3D( 120%,0, 0 ) rotateY( 90deg ); color: #999; opacity: 0 }
+  32%, 58% { transform: translate3D( 0,0,0 ) rotateY( 0deg ); color: #FFF; opacity: 1 }
+}
+@keyframes animS1 {
+  20%, 70% { transform: translate3D( 30%,0, 0 ) rotateY( 90deg ); color: #999; opacity: 0 }
+  32%, 58% { transform: translate3D( 0,0,0 ) rotateY( 0deg ); color: #FFF; opacity: 1 }
+}
+@keyframes animS2 {
+  20%, 70% { transform: translate3D( -30%,0, 0 ) rotateY( -90deg ); color: #999; opacity: 0 }
+  32%, 58% { transform: translate3D( 0,0,0 ) rotateY( 0deg ); color: #FFF; opacity: 1 }
+}
+@keyframes animI2 {
+  20%, 70% { transform: translate3D( -30%,0, 0 ) rotateY( -90deg ); color: #999; opacity: 0 }
+  32%, 58% { transform: translate3D( 0,0,0 ) rotateY( 0deg ); color: #FFF; opacity: 1 }
+}
+@keyframes animO1 {
+  15%, 75% { transform: translate3D( -120%,0, 0 ) rotateY( -90deg ); color: #999; opacity: 0 }
+  32%, 58% { transform: translate3D( 0,0,0 ) rotateY( 0deg ); color: #FFF; opacity: 1 }
+}
+@keyframes animN1 {
+  0% , 90% { transform: translate3D( -240%,0,-400px ) rotateY( -85deg ); opacity: 0 }
+  10%, 80% { transform: translate3D( -220%,0,0 ) rotateY( -40deg ); opacity: 1; }
+  32%, 58% { transform: translate3D( 0,0,0 ) rotateY( 0deg ); }
+}
+
+@keyframes animSP {
+  0% , 90% { transform: translate3D( -240%,0,-400px ) rotateY( -85deg ); opacity: 0 }
+  10%, 80% { transform: translate3D( -220%,0,0 ) rotateY( -40deg ); opacity: 1; }
+  32%, 58% { transform: translate3D( 0,0,0 ) rotateY( 0deg ); }
+}
+
+
+@keyframes animC1 {
+  0% , 90% { transform: translate3D( 240%,0,-400px ) rotateY( 85deg ); opacity: 0 }
+  10%, 80% { transform: translate3D( 220%,0,0 ) rotateY( 40deg ); opacity: 1; }
+  32%, 58% { transform: translate3D( 0,0,0 ) rotateY( 0deg ); }
+}
+@keyframes animO2 {
+  15%, 75% { transform: translate3D( 120%,0, 0 ) rotateY( 90deg ); color: #999; opacity: 0 }
+  32%, 58% { transform: translate3D( 0,0,0 ) rotateY( 0deg ); color: #FFF; opacity: 1 }
+}
+@keyframes animN2 {
+  20%, 70% { transform: translate3D( 30%,0, 0 ) rotateY( 90deg ); color: #999; opacity: 0 }
+  32%, 58% { transform: translate3D( 0,0,0 ) rotateY( 0deg ); color: #FFF; opacity: 1 }
+}
+@keyframes animT1 {
+  20%, 70% { transform: translate3D( -30%,0, 0 ) rotateY( -90deg ); color: #999; opacity: 0 }
+  32%, 58% { transform: translate3D( 0,0,0 ) rotateY( 0deg ); color: #FFF; opacity: 1 }
+}
+@keyframes animR1 {
+  20%, 70% { transform: translate3D( -30%,0, 0 ) rotateY( -90deg ); color: #999; opacity: 0 }
+  32%, 58% { transform: translate3D( 0,0,0 ) rotateY( 0deg ); color: #FFF; opacity: 1 }
+}
+@keyframes animO3 {
+  15%, 75% { transform: translate3D( -120%,0, 0 ) rotateY( -90deg ); color: #999; opacity: 0 }
+  32%, 58% { transform: translate3D( 0,0,0 ) rotateY( 0deg ); color: #FFF; opacity: 1 }
+}
+@keyframes animL1 {
+  0% , 90% { transform: translate3D( -240%,0,-400px ) rotateY( -85deg ); opacity: 0 }
+  10%, 80% { transform: translate3D( -220%,0,0 ) rotateY( -40deg ); opacity: 1; }
+  32%, 58% { transform: translate3D( 0,0,0 ) rotateY( 0deg ); }
+}
+
+
+
 
 header, main, footer {
 	width: 600px;
@@ -18,7 +192,7 @@ header {
 
 main {
 	height: auto;
-	padding: 5px;
+	padding: 2px;
 }
 
 footer {
@@ -37,7 +211,7 @@ h1 {
 
 .menu-btn {
 	height: 30px;
-	width: 99px;
+	width: 100px;
 	border-radius: 15px;
 	justify-content: center;
 	font-weight: bolder;
@@ -46,15 +220,15 @@ h1 {
 
 .group {
 	display: flex;
-	flex-direction: row;
+	flex-direction: column;
 	border-color: black;
 	border-width: 5px;
 	border-style: solid;
 }
 
 .item {
-	display: inline-flex;
-	flex-direction: column;
+	display: flex;
+	flex-direction: row;
 	vertical-align: top;
 	border-style: solid;
 	border-color: black;
@@ -70,15 +244,14 @@ img {
 
 
 .menu {
-	margin: auto;
-	width: 100px; 
-	display: inline-flex;
+	display: flex;
+	width: auto; 
+	flex-direction: row;
 	border-color: black;
 	border-width: 10px;
 	border-spacing: 10px;
 	text-align: left;
-	vertical-align: top;
-	vertical-align: text-top;
+
 
 
 }
@@ -98,13 +271,45 @@ img {
 	height: auto;
 }
 
+.centerit {
+	display: block;
+	margin: 0 auto;
+	text-align: center;
+}
+
 
 @media all and (min-width: 600px) {
 
 
+.group {
+	display: flex;
+	flex-direction: row;
+	border-color: black;
+	border-width: 5px;
+	border-style: solid;
+}
+
+.menu {
+	margin: auto;
+	width: 100px; 
+	display: inline-flex;
+	border-color: black;
+	border-width: 10px;
+	border-spacing: 10px;
+	text-align: left;
+	vertical-align: top;
+	vertical-align: text-top;
 
 
+}
 
-
+.item {
+	display: flex;
+	flex-direction: column;
+	vertical-align: top;
+	border-style: solid;
+	border-color: black;
+	border-width: 5px;
+}
 
 }

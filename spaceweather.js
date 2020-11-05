@@ -16,31 +16,31 @@ function showNasaSpaceWeather(data) {
 	<div class="js-space-1">
 	<h2>Current Space Weather Situation</h2>
 		<ul>
-			<li> Message Type: ${data[0].messageType} </li>
-			<li> Message ID: ${data[0].messageID}</li>
-			<li> Message Details: <a href="${data[0].messageURL}" target="_blank">Link</a></li>
-			<li> Message Issue Time: ${data[0].messageIssueTime}</li>
-			<li> Message: ${data[0].messageBody}</li>
+			<li><h3> Message Type:</h3> ${data[0].messageType} </li>
+			<li> <h3>Message ID:</h3> ${data[0].messageID}</li>
+			<li> <h3>Message Details:</h3> <a href="${data[0].messageURL}" target="_blank">Link</a></li>
+			<li> <h3>Message Issue Time:</h3> ${data[0].messageIssueTime}</li>
+			<li> <h3>Message:</h3> ${data[0].messageBody}</li>
 		</ul>
 	</div>
 	`;
 
 let spaceWeatherHeadersHtml = document.getElementById('target-2');
 
-spaceWeatherHeadersHtml.innerHTML = `	<div class="js-space-2">
+spaceWeatherHeadersHtml.innerHTML = `	<div class="js-space-2 group">
 	<h2>Past Weather</h2>`;
 
 for (let i = 1; i < data.length; i++) {
 	let spaceWeatherPastHtml = document.getElementById('target-2');
 	spaceWeatherPastHtml.innerHTML += `
-	<div ="js-space-s-blks">
+	<!-- <div class="js-space-s-blks"> -->
 		<ul>
-			<li>Type: ${data[i].messageType}</li>
-			<li>ID: ${data[i].messageID}</li>
-			<li>Details: <a href="${data[i].messageURL}" target="_blank">Link</a>
-			<li>Issue Time: ${data[i].messageIssueTime}</a>
+			<li><h3>Type:</h3> ${data[i].messageType}</li>
+			<li><h3>ID:</h3> ${data[i].messageID}</li>
+			<li><h3>Details:</h3> <a href="${data[i].messageURL}" target="_blank">Link</a>
+			<li><h3>Issue Time:</h3> ${data[i].messageIssueTime}</a>
 		</ul>
-	</div>
+	<!-- </div> -->
 	`;
 
 	}

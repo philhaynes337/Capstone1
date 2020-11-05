@@ -13,35 +13,39 @@ function showSpaceXCompanyInfo(data) {
 		let showSpaceXHtml = document.getElementById('target');
 		showSpaceXHtml.innerHTML = `
 
-			<div class="js-spacex-info">
+			<div class="js-spacex-info group">
 			<h2>Company Profile:</h2>
 				<ul>
-					<li>Company Name: ${data.name}</li>
-					<li>Founder: ${data.founder}</li>
-					<li>Date Founded: ${data.founded}</li>
-					<li>Number of Employees:${data.employees}</li>
-					<li>Vehicles: ${data.vehicles}</li>
-					<li>Launch Sites: ${data.launch_sites}</li>
-					<li>Test Sites: ${data.test_sites}</li>
-					<li>CEO: ${data.ceo}</li>
-					<li>CTO: ${data.cto}</li>
-					<li>COO: ${data.coo}</li>
-					<li>CTO Propulsion: ${data.cto_propulsion}</li>
-					<li>Website: <a href="${data.links.website}" target="_blank">${data.links.website}</a></li>
-					<li>Flickr: <a href="${data.links.flickr}" target="_blank">${data.links.flickr}</a>
-					<li>Twitter: <a href="${data.links.twitter}" target="_blank">${data.links.twitter}</a></li>
-					<li>Elon's Twitter: <a href="${data.links.elon_twitter}" target="_blank">${data.links.elon_twitter}</a></li>
+					<li><h3>Company Name:</h3> ${data.name}</li>
+					<li><h3>Founder:</h3> ${data.founder}</li>
+					<li><h3>Date Founded:</h3> ${data.founded}</li>
+					<li><h3>Number of Employees:</h3>${data.employees}</li>
+					<li><h3>Vehicles:</h3> ${data.vehicles}</li>
+					<li><h3>Launch Sites:</h3> ${data.launch_sites}</li>
+					<li><h3>Test Sites:</h3> ${data.test_sites}</li>
+					<li><h3>CEO:</h3> ${data.ceo}</li>
+					<li><h3>CTO:</h3> ${data.cto}</li>
+					<li><h3>COO:</h3> ${data.coo}</li>
+					<li><h3>CTO Propulsion:</h3> ${data.cto_propulsion}</li>
+					<li><h3>Website:</h3> <a href="${data.links.website}" target="_blank">${data.links.website}</a></li>
+					<li><h3>Flickr:</h3> <a href="${data.links.flickr}" target="_blank">${data.links.flickr}</a>
+					<li><h3>Twitter:</h3> <a href="${data.links.twitter}" target="_blank">${data.links.twitter}</a></li>
+					<li><h3>Elon's Twitter:</h3> <a href="${data.links.elon_twitter}" target="_blank">${data.links.elon_twitter}</a></li>
 
 
 				</ul>
+			<div class="group item">
 			<h2>Summary:</h2>
 				<ul>
 					<li>${data.summary}</li>
 				</ul>
+
+				
 			<h2>Headquarters:</h2>
 				<ul>
 					<li>${data.headquarters.address}<br>
 					${data.headquarters.city}, ${data.headquarters.state}</li>
+			</div>
 			</div>
 
 		`
@@ -132,24 +136,24 @@ function upcomingLaunchShow(responseJson) {
 	let launchHtml = document.getElementById('target');
 	launchHtml.innerHTML = 
 	`
-	<div id="nextLaunch">
-	<h2>Next Launch Information</h2>
+	<div id="nextLaunch" class="group item">
+	<h2>Next Launch Information:</h2>
+	<div class="item">
 		<ul>
-			<li>Next Launch is: ${responseJson[0].date_utc}</li>
-			<li>Flight Number: ${responseJson[0].flight_number}</li>
-			<li>Details: ${responseJson[0].details}</li>
+			<li><h3>Next Launch is:</h3> ${responseJson[0].date_utc}</li>
+			<li><h3>Flight Number:</h3> ${responseJson[0].flight_number}</li>
+			<li><h3>Details:</h3> ${responseJson[0].details}</li>
 		</ul>
 	</div>
-	<div id="nextFiveLaunches-1">
-
 	</div>
+
 
 	`;
 
 	let launchHeaderHtml = document.getElementById('target-2');
 	launchHeaderHtml.innerHTML = `
 
-			<div id="next-launch">
+			<div id="next-launch" class="group item">
 				<h2>Upcoming Launches</h2>
 			</div>
 
@@ -162,11 +166,11 @@ function upcomingLaunchShow(responseJson) {
 		let nextFiveLaunchesHtml = document.getElementById('target-2');
 		nextFiveLaunchesHtml.innerHTML += `
 
-			<div id="js-next-flights">
+			<div id="js-next-flights" class="group">
 				<ul>
 
-					<li>Flight Number: ${responseJson[i].flight_number}</li>
-					<li>Date: ${responseJson[i].date_utc}</li>
+					<li><h3>Flight Number:</h3> ${responseJson[i].flight_number}</li>
+					<li><h3>Date:</h3> ${responseJson[i].date_utc}</li>
 					
 				</ul>
 			</div>

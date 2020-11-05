@@ -52,9 +52,9 @@ function loadDisplayPictureOfTheDay(data) {
 		let nasaPodHtml = document.getElementById('target');
 		nasaPodHtml.innerHTML = `
 
-
-		<img src="${data.url}">
-		<div id="js-pod-description">
+		<div>
+		<img src="${data.url}"><br>
+		
 		<h2>${data.title}</h2>
 			<ul>
 				<li><h3>Explanation:</h3>  ${data.explanation}</li>

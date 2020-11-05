@@ -30,7 +30,7 @@ let spaceWeatherHeadersHtml = document.getElementById('target-2');
 spaceWeatherHeadersHtml.innerHTML = `	<div class="js-space-2 group">
 	<h2>Past Weather</h2>`;
 
-for (let i = 1; i < data.length; i++) {
+for (let i = 1; i < 6; i++) {
 	let spaceWeatherPastHtml = document.getElementById('target-2');
 	spaceWeatherPastHtml.innerHTML += `
 	<!-- <div class="js-space-s-blks"> -->

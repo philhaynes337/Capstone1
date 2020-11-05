@@ -13,7 +13,7 @@ function showSpaceXCompanyInfo(data) {
 		let showSpaceXHtml = document.getElementById('target');
 		showSpaceXHtml.innerHTML = `
 
-			<div class="js-spacex-info group">
+			<!-- <div class="js-spacex-info group"> -->
 			<h2>Company Profile:</h2>
 				<ul>
 					<li><h3>Company Name:</h3> ${data.name}</li>
@@ -34,8 +34,13 @@ function showSpaceXCompanyInfo(data) {
 
 
 				</ul>
-			<div class="group item">
-			<h2>Summary:</h2>
+			
+
+		`
+		let showSpaceXHtmlII = document.getElementById('target-2');
+		showSpaceXHtmlII.innerHTML = `
+
+		<h2>Summary:</h2>
 				<ul>
 					<li>${data.summary}</li>
 				</ul>
@@ -45,8 +50,6 @@ function showSpaceXCompanyInfo(data) {
 				<ul>
 					<li>${data.headquarters.address}<br>
 					${data.headquarters.city}, ${data.headquarters.state}</li>
-			</div>
-			</div>
 
 		`
 
@@ -136,15 +139,14 @@ function upcomingLaunchShow(responseJson) {
 	let launchHtml = document.getElementById('target');
 	launchHtml.innerHTML = 
 	`
-	<div id="nextLaunch" class="group item">
-	<h2>Next Launch Information:</h2>
-	<div class="item">
+	<div>
+	<h2>Next Launch Information:</h2><br>
+	
 		<ul>
 			<li><h3>Next Launch is:</h3> ${responseJson[0].date_utc}</li>
 			<li><h3>Flight Number:</h3> ${responseJson[0].flight_number}</li>
 			<li><h3>Details:</h3> ${responseJson[0].details}</li>
 		</ul>
-	</div>
 	</div>
 
 
@@ -153,9 +155,9 @@ function upcomingLaunchShow(responseJson) {
 	let launchHeaderHtml = document.getElementById('target-2');
 	launchHeaderHtml.innerHTML = `
 
-			<div id="next-launch" class="group item">
-				<h2>Upcoming Launches</h2>
-			</div>
+		
+				<h2>Upcoming Launches:</h2>
+			
 
 	`;
 
@@ -166,14 +168,14 @@ function upcomingLaunchShow(responseJson) {
 		let nextFiveLaunchesHtml = document.getElementById('target-2');
 		nextFiveLaunchesHtml.innerHTML += `
 
-			<div id="js-next-flights" class="group">
+			
 				<ul>
 
 					<li><h3>Flight Number:</h3> ${responseJson[i].flight_number}</li>
 					<li><h3>Date:</h3> ${responseJson[i].date_utc}</li>
 					
 				</ul>
-			</div>
+			
 
 		`
 	}

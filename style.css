@@ -1,33 +1,29 @@
--
-/* html {
-  /*background: url(https://upload.wikimedia.org/wikipedia/commons/thumb/8/80/NGC_2818_by_the_Hubble_Space_Telescope.jpg/1280px-NGC_2818_by_the_Hubble_Space_Telescope.jpg) no-repeat 50% 50%; */
-  /* background-size: cover; */
-  /* position: fixed; */
+/* Start code for mobile */
 
-  /* top: 0;
-  bottom: 0;
-  left: 0;
-  right: 0; 
 
+body {
+  
   color: white;
-  font-weight: 50;
+  background-repeat: no-repeat;
+
+  
+ 
 }
-*/
+/* links */
+a:link      { color: blue; }
+a:visited   { color: blue; }
+a:hover     { color: white; }
+a:active    { color: red; }
 
 
-
-
-
-
-
-
-
+/* code for the stars in the background */
 html {
   height: 100%;
   background: radial-gradient(ellipse at bottom, #1b2735 0%, #090a0f 100%);
-  overflow: hidden;
+  
   font-family:  'Lato', sans-serif;
 }
+
 
 #stars {
   width: 1px;
@@ -109,26 +105,13 @@ html {
   }
 }
 
+/* end code for the stars and begin code for the mission control animation */
 
-
-
-
-body {
-  background-color: black;
-  color: white;
-
-}
 
 .cosmos {
   padding: 0;
-  /* margin: 0; */
-  /* top: 50%; 
-  left: 0;
-  right: 0;*/
   font-size: 250%;
-  /* margin-top: -66px; */
   text-align: center;
-  /* perspective: 600px; */
   margin: 0 auto;
   display: block;
 
@@ -271,13 +254,16 @@ body {
   32%, 58% { transform: translate3D( 0,0,0 ) rotateY( 0deg ); }
 }
 
+/* end code for the mission control animation */
+
 
 
 
 header, main, footer {
 	width: 600px;
-	margin: auto;
+	padding: 10px;
 	font-family: courier;
+
 }
 
 header {
@@ -293,7 +279,7 @@ header {
 
 main {
 	height: auto;
-	padding: 2px;
+	padding: 5px;
 }
 
 footer {
@@ -310,6 +296,8 @@ h1 {
 
 }
 
+
+/* button code to include transition */
 .menu-btn {
 	height: 30px;
 	width: 100px;
@@ -317,23 +305,25 @@ h1 {
 	justify-content: center;
 	font-weight: bolder;
 	font-size: 12px;
+  transition: 0.3s;
+}
+
+.menu-btn:hover {
+  background-color: white;
+  color: black;
 }
 
 .group {
 	display: flex;
 	flex-direction: column;
-	border-color: black;
-	border-width: 5px;
-	border-style: solid;
+
 }
 
 .item {
 	display: flex;
 	flex-direction: row;
 	vertical-align: top;
-	border-style: solid;
-	border-color: black;
-	border-width: 5px;
+
 }
 
 img {
@@ -348,28 +338,26 @@ img {
 	display: flex;
 	width: auto; 
 	flex-direction: row;
-	border-color: black;
-	border-width: 10px;
-	border-spacing: 10px;
+
 	text-align: left;
 
 
 
 }
 
+
+/* target and target-2 very important for the java targetting */
 .target {
 
-	margin: auto;
 	width: 400px;
 	height: auto;
+  padding: 10px;
 
 }
 
 .target-2 {
-
-	margin: auto;
-	/* width: 100; */
 	height: auto;
+  padding: 5px;
 }
 
 .centerit {
@@ -379,27 +367,22 @@ img {
 }
 
 
+/* start code for desktop */
+
 @media all and (min-width: 600px) {
 
 
 .group {
 	display: flex;
 	flex-direction: row;
-	border-color: black;
-	border-width: 5px;
-	border-style: solid;
+
 }
 
 .menu {
 	
 	width: 100px; 
-	/* display: inline-flex; */
-	border-color: black;
-	border-width: 10px;
-	border-spacing: 10px;
 	text-align: left;
-	vertical-align: top;
-	vertical-align: text-top;
+
 
 
 }
@@ -408,9 +391,6 @@ img {
 	display: flex;
 	flex-direction: column;
 	vertical-align: top;
-	border-style: solid;
-	border-color: black;
-	border-width: 5px;
 }
 
 
@@ -419,10 +399,30 @@ img {
 .menu-btn {
   height: 50px;
   width: 200px;
-  border-radius: 15px;
+  background-color: white;
   justify-content: center;
   font-weight: bolder;
   font-size: 20px;
+  transition: 1s;
+}
+
+.menu-btn:hover {
+  background-color: black;
+  color: white;
+}
+
+.target {
+
+ 
+  width: 600px;
+  height: auto;
+
+}
+/* target and target-2 very important for the java targetting */
+.target-2 {
+
+ 
+  height: auto;
 }
 
 }

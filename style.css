@@ -1,5 +1,5 @@
 /* Start code for mobile */
-@media only screen and (max-width: 599px){
+
 
 body {
   
@@ -366,7 +366,7 @@ img {
 	text-align: center;
 }
 
-}
+
 /* start code for desktop */
 
 @media only screen and (min-width: 600px) {
@@ -397,8 +397,8 @@ img {
 }
 
 .menu-btn {
-  /* height: 50px;
-  width: 200px; */
+  height: 50px;
+  width: 200px; 
   background-color: white;
   justify-content: center;
   font-weight: bolder;

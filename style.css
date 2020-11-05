@@ -1,5 +1,5 @@
 /* Start code for mobile */
-
+@media only screen and (max-width: 599px){
 
 body {
   
@@ -260,7 +260,7 @@ html {
 
 
 header, main, footer {
-	width: 600px;
+	width: 599px;
 	padding: 10px;
 	font-family: courier;
 
@@ -336,7 +336,7 @@ img {
 
 .menu {
 	display: flex;
-	width: auto; 
+	width: 599px; 
 	flex-direction: row;
 
 	text-align: left;
@@ -366,10 +366,10 @@ img {
 	text-align: center;
 }
 
-
+}
 /* start code for desktop */
 
-@media all and (min-width: 600px) {
+@media only screen and (min-width: 600px) {
 
 
 .group {
@@ -397,8 +397,8 @@ img {
 }
 
 .menu-btn {
-  height: 50px;
-  width: 200px;
+  /* height: 50px;
+  width: 200px; */
   background-color: white;
   justify-content: center;
   font-weight: bolder;

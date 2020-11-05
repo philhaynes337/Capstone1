@@ -163,7 +163,7 @@ function upcomingLaunchShow(responseJson) {
 
 
 
-	for (let i = 1; i < responseJson.length; i++) {
+	for (let i = 1; i < 5; i++) {
 
 		let nextFiveLaunchesHtml = document.getElementById('target-2');
 		nextFiveLaunchesHtml.innerHTML += `

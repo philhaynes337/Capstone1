@@ -10,6 +10,6 @@ https://philhaynes337.github.io/missioncontrol/
 ## Screenshots
 
 About Page:
-![about](screenshots/about_page.jpg)
+![about](screenshots/about_page.JPG)
 
 

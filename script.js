@@ -17,7 +17,7 @@ function aboutHtmlBtn() {
 
 	$('#main').submit(event => {
 		event.preventDefault();
-		console.log("Loading Main");
+		
 		$('#target').empty();
 		$('#target-2').empty();
 

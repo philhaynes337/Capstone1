@@ -19,7 +19,7 @@ a:active    { color: red; }
 /* code for the stars in the background */
 html {
   height: 100%;
-  background: radial-gradient(ellipse at bottom, #1b2735 0%, #090a0f 100%);
+  background: radial-gradient(ellipse at bottom, #1b2735 0%, #090a0f 0%);
   
   font-family:  'Lato', sans-serif;
 }
@@ -410,7 +410,7 @@ img {
   background-color: black;
   color: white;
 }
-
+/* target and target-2 very important for the java targetting */
 .target {
 
  
@@ -418,10 +418,10 @@ img {
   height: auto;
 
 }
-/* target and target-2 very important for the java targetting */
+
 .target-2 {
 
- 
+
   height: auto;
 }
 

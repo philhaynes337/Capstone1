@@ -88,7 +88,7 @@ function spaceXBtn() {
 
 	$('#spacex').submit(event => {
 			event.preventDefault();
-			console.log("SpaceX Button Works");
+			
 
 	$('#target-2').empty();
 
@@ -104,7 +104,7 @@ function upcomingLaunch() {
 
 	$('#launches').submit(event => {
 		event.preventDefault();
-		console.log("upcomingLaunches Works!");
+		
 
 		$('#target-2').empty();
 
@@ -118,7 +118,7 @@ function fetchUpcomingLaunch() {
 	fetch(spaceXUpcomingUrl)
 		.then(response => {
 			if (response.ok) {
-				console.log("Conncted to SpaceX Upcoming Launches")
+				
 
 				return response.json();
 			}
@@ -134,7 +134,7 @@ function fetchUpcomingLaunch() {
 
 function upcomingLaunchShow(responseJson) {
 	$('#target').empty();
-	console.log(responseJson);
+	
 
 	let launchHtml = document.getElementById('target');
 	launchHtml.innerHTML = 
@@ -188,7 +188,7 @@ function upcomingLaunchShow(responseJson) {
 
 
 function all() {
-	console.log("SpaceX Started!")
+	
 	spaceXBtn();
 	upcomingLaunch();
 }

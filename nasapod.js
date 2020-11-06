@@ -20,12 +20,12 @@ let cd = new Date();
 
 
 
-	console.log("This is the url string: " + apiCorrectDateUrl);
+	
 	fetch(apiCorrectDateUrl)
 		.then(response => {
 			if (response.ok) {
-				console.log("Connected to NASA's Picture of the Day!")
-				//temp = response.json();
+				
+				
 
 				return response.json();
 			}
@@ -39,8 +39,7 @@ let cd = new Date();
 		.then(responseJson => loadDisplayPictureOfTheDay(responseJson))
 		.catch(error => {
 			console.log('something went wrong');
-			//let errorMsg = `${err.message}`;
-			//console.log(errorMsg);
+		
 		})
 
 }
@@ -48,7 +47,7 @@ let cd = new Date();
 
 function loadDisplayPictureOfTheDay(data) {
 
-		console.log(data.url);
+		
 		let nasaPodHtml = document.getElementById('target');
 		nasaPodHtml.innerHTML = `
 
@@ -71,7 +70,7 @@ function loadDisplayPictureOfTheDay(data) {
 function pictureOfTheDayBtn() {
 	$('#images').submit(event => {
 		event.preventDefault();
-		console.log("NASA POD Button Works!");
+		
 		$('#target').empty();
 		$('#target-2').empty();
 

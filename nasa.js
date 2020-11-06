@@ -31,9 +31,7 @@ function resutlsNasa(msg) {
   $('.target').html(msg);
 
   return
-	//let nasaHtmlElement = document.getElementById('target');
-	//nasaHtmlElement.InnerHTML = msg;
-  //console.log(msg);
+
 }
 
 
@@ -57,10 +55,7 @@ function nasaBtn() {
 
 
 function all() {
-	console.log("App Started");
-  console.log("NASA Started!")
-	//nasaBtn();
-  //resutlsNasa();
+
 }
 
 $(all);

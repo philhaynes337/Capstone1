@@ -12,4 +12,16 @@ https://philhaynes337.github.io/missioncontrol/
 About Page:
 ![about](screenshots/about_page.JPG)
 
+NASA Picture of the Day Page:
+![NASAPOD](screenshots/nasa_pod.JPG)
+
+SpaceX Information Page:
+![SpaceXInfo](screenshots/spacex_info.JPG)
+
+SpaceX Launch Information Page:
+![SpaceXLaunch](screenshots/launches_page.JPG)
+
+Space Weather Page:
+![SpaceWeather](screenshots/weather_page.JPG)
+
 

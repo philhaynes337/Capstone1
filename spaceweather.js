@@ -13,7 +13,10 @@ function showNasaSpaceWeather(data) {
 	let spaceWeatherHtml = document.getElementById('target');
 	spaceWeatherHtml.innerHTML = 
 	`
-	<div class="js-space-1">
+	<article>
+	<div class="centerit">
+	<img src="space_weather.jpg" alt="Space Weather"><br>
+	</div>
 	<h2>Current Space Weather Situation</h2>
 		<ul>
 			<li><h3> Message Type:</h3> ${data[0].messageType} </li>
@@ -22,7 +25,7 @@ function showNasaSpaceWeather(data) {
 			<li> <h3>Message Issue Time:</h3> ${data[0].messageIssueTime}</li>
 			<li> <h3>Message:</h3> ${data[0].messageBody}</li>
 		</ul>
-	</div>
+	</article>
 	`;
 
 let spaceWeatherHeadersHtml = document.getElementById('target-2');

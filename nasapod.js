@@ -51,8 +51,10 @@ function loadDisplayPictureOfTheDay(data) {
 		let nasaPodHtml = document.getElementById('target');
 		nasaPodHtml.innerHTML = `
 
-		<div>
-		<img src="${data.url}"><br>
+		<article>
+		<div class="centerit">
+		<img src="${data.url}" alt="Picture of the Day"><br>
+		</div>
 		
 		<h2>${data.title}</h2>
 			<ul>
@@ -60,7 +62,8 @@ function loadDisplayPictureOfTheDay(data) {
 				<li><h3>Copyright:</h3> ${data.copyright}</li>
 				<li><h3>Date:</h3> ${data.date}</li>
 				<li><h3>HD Version:</h3> <a href="${data.hdurl}" target="_blank">HD Image Link</a></li>
-		</div>
+		
+		</article>
 
 
 

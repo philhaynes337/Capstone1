@@ -14,6 +14,10 @@ function showSpaceXCompanyInfo(data) {
 		showSpaceXHtml.innerHTML = `
 
 			<!-- <div class="js-spacex-info group"> -->
+			<article>
+				<div class="centerit">
+					<img src="spacex_logo2.png" class="logo"><br>
+				</div>
 			<h2>Company Profile:</h2>
 				<ul>
 					<li><h3>Company Name:</h3> ${data.name}</li>
@@ -34,6 +38,7 @@ function showSpaceXCompanyInfo(data) {
 
 
 				</ul>
+				</article>
 			
 
 		`
@@ -139,7 +144,10 @@ function upcomingLaunchShow(responseJson) {
 	let launchHtml = document.getElementById('target');
 	launchHtml.innerHTML = 
 	`
-	<div>
+	<article>
+	<div class="centerit">
+	<img src="spacex_launch.jpg" alt="SpaceX Launch"><br>
+	</div>
 	<h2>Next Launch Information:</h2><br>
 	
 		<ul>
@@ -147,7 +155,7 @@ function upcomingLaunchShow(responseJson) {
 			<li><h3>Flight Number:</h3> ${responseJson[0].flight_number}</li>
 			<li><h3>Details:</h3> ${responseJson[0].details}</li>
 		</ul>
-	</div>
+	</article>
 
 
 	`;

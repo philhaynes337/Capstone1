@@ -10,8 +10,8 @@ body {
  
 }
 /* links */
-a:link      { color: blue; }
-a:visited   { color: blue; }
+a:link      { color: red; }
+a:visited   { color: red; }
 a:hover     { color: white; }
 a:active    { color: red; }
 
@@ -260,9 +260,10 @@ html {
 
 
 header, main, footer {
-	width: 599px;
+	width: auto;
 	padding: 10px;
-	font-family: courier;
+	font-family: 'Kanit', sans-serif;
+
 
 }
 
@@ -294,6 +295,10 @@ h1 {
 	font-size: 50px;
 	
 
+}
+
+p {
+  font-size: 50px;
 }
 
 
@@ -330,6 +335,19 @@ img {
 	height: 400px;
 	width: 400px;
 	border-radius: 20px;
+
+}
+
+.logo {
+  height: 200px;
+  width: 200px;
+
+
+}
+.nasalogo {
+  height: 360px;
+  width: 480px;
+
 }
 
 
@@ -352,12 +370,24 @@ img {
 	width: 400px;
 	height: auto;
   padding: 10px;
+  background-color: black;
+  border-radius: 25px;
+  border-color: white;
+  border-width: 5px;
+
 
 }
 
 .target-2 {
 	height: auto;
   padding: 5px;
+  background-color: black;
+  border-radius: 25px;
+  border-top-style: none;
+  border-left-style: solid;
+  border-right-style: solid;
+  border-bottom-style: solid;
+
 }
 
 .centerit {
@@ -366,11 +396,23 @@ img {
 	text-align: center;
 }
 
+.icon {
+
+  font-size: 10px;
+}
 
 /* start code for desktop */
 
 @media only screen and (min-width: 600px) {
 
+
+header, main, footer {
+  width: 800px;
+  padding: 10px;
+  font-family: 'Kanit', sans-serif;
+
+
+}
 
 .group {
 	display: flex;
@@ -416,13 +458,25 @@ img {
  
   width: 600px;
   height: auto;
+  border-color: white;
+  border-width: 5px;
+  border-style: solid;
 
 }
 
 .target-2 {
 
-
+  background-color: black;
+  border-radius: 25px;
   height: auto;
+  border-top-style: solid;
+  border-right-style: solid;
+  border-bottom-style: solid;
+  border-left-style: none;
+}
+
+p {
+  font-size: 25px;
 }
 
 }

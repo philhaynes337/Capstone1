@@ -5,6 +5,7 @@ body {
   
   color: white;
   background-repeat: no-repeat;
+  width: 100%;
 
   
  
@@ -260,7 +261,7 @@ html {
 
 
 header, main, footer {
-	width: auto;
+	width: 600px;
 	padding: 10px;
 	font-family: 'Kanit', sans-serif;
 
@@ -297,8 +298,10 @@ h1 {
 
 }
 
-p {
+.article-js {
+
   font-size: 50px;
+
 }
 
 
@@ -356,7 +359,6 @@ img {
 	display: flex;
 	width: 599px; 
 	flex-direction: row;
-
 	text-align: left;
 
 
@@ -367,7 +369,7 @@ img {
 /* target and target-2 very important for the java targetting */
 .target {
 
-	width: 400px;
+	width: auto;
 	height: auto;
   padding: 10px;
   background-color: black;
@@ -380,7 +382,6 @@ img {
 
 .target-2 {
 	height: auto;
-  padding: 5px;
   background-color: black;
   border-radius: 25px;
   border-top-style: none;
@@ -468,14 +469,16 @@ header, main, footer {
 
   background-color: black;
   border-radius: 25px;
+  padding: 10px;
   height: auto;
+  width: auto;
   border-top-style: solid;
   border-right-style: solid;
   border-bottom-style: solid;
   border-left-style: none;
 }
 
-p {
+.article-js {
   font-size: 25px;
 }
 

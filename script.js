@@ -11,7 +11,7 @@ function showAboutHtml() {
 	let aboutHtml = document.getElementById('target');
 
 	aboutHtml.innerHTML = `
-	<artical>
+	<artical class="artical-js">
 		<div class="centerit">
 			<img src="nasa_logo.png" class="nasalogo"><img src="spacex_logo2.png" class="logo">
 				<br>

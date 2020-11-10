@@ -14,9 +14,9 @@ function showAboutHtml() {
 	<artical class="artical-js">
 		<div class="centerit">
 		
-			<img src="nasa_logo.png" class="nasalogo">
+			<img src="nasa_logo.png" class="nasalogo" alt="NASA Logo">
 				
-			<img src="spacex_logo2.png" class="logo">
+			<img src="spacex_logo2.png" class="logo" alt="SpaceX Logo">
 				<br>
 		</div>
 

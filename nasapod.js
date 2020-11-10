@@ -57,11 +57,13 @@ function loadDisplayPictureOfTheDay(data) {
 		</div>
 		
 		<h2>${data.title}</h2>
+	
 			<ul>
-				<li><h3>Explanation:</h3>  ${data.explanation}</li>
-				<li><h3>Copyright:</h3> ${data.copyright}</li>
-				<li><h3>Date:</h3> ${data.date}</li>
-				<li><h3>HD Version:</h3> <a href="${data.hdurl}" target="_blank">HD Image Link</a></li>
+				<li><h3>Explanation:</h3> <p> ${data.explanation}</p></li>
+				<li><h3>Copyright:</h3><p> ${data.copyright}</p></li>
+				<li><h3>Date:</h3><p> ${data.date}</p></li>
+				<li><h3>HD Version:</h3> <a href="${data.hdurl}" target="_blank"><p>HD Image Link</a></p></li>
+
 		
 		</article>
 

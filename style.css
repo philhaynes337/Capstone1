@@ -3,18 +3,18 @@
 
 body {
   
-  color: white;
+  color: #FFFFFF;
   background-repeat: no-repeat;
-  width: 100%;
+  width: 425px;
 
   
  
 }
 /* links */
-a:link      { color: red; }
-a:visited   { color: red; }
-a:hover     { color: white; }
-a:active    { color: red; }
+a:link      { color: #FF0000; }
+a:visited   { color: #FF0000; }
+a:hover     { color: #FFFFFF; }
+a:active    { color: #FF0000; }
 
 
 /* code for the stars in the background */
@@ -260,9 +260,9 @@ html {
 
 
 
-header, main, footer {
-	width: 600px;
-	padding: 10px;
+header, main, footer, article {
+	width: 560px;
+	padding: 0px;
 	font-family: 'Kanit', sans-serif;
 
 
@@ -293,32 +293,39 @@ footer {
 h1 {
 
 	font-weight: bold;
-	font-size: 50px;
+	font-size: 70px;
 	
 
 }
 
-.article-js {
+h2 {
+  font-weight: bold;
+  font-size: 45px;
+}
 
-  font-size: 50px;
-
+h3 {
+  font-weight: bold;
+  font-size: 40px;
 }
 
 
 /* button code to include transition */
 .menu-btn {
-	height: 30px;
+	height: 70px;
 	width: 100px;
 	border-radius: 15px;
-	justify-content: center;
+  text-align: center;
 	font-weight: bolder;
-	font-size: 12px;
+	font-size: 19px;
   transition: 0.3s;
+  white-space: normal;
+  background-color: #FFFFFF;
+  color: black;
 }
 
 .menu-btn:hover {
-  background-color: white;
-  color: black;
+  background-color: #000000;
+  color: red;
 }
 
 .group {
@@ -335,9 +342,10 @@ h1 {
 }
 
 img {
-	height: 400px;
-	width: 400px;
-	border-radius: 20px;
+	height: 500px;
+	width: 500px;
+	border-radius: 25px;
+  
 
 }
 
@@ -348,8 +356,8 @@ img {
 
 }
 .nasalogo {
-  height: 360px;
-  width: 480px;
+  height: 208px;
+  width: 276px;
 
 }
 
@@ -357,7 +365,7 @@ img {
 
 .menu {
 	display: flex;
-	width: 599px; 
+	width: 560px; 
 	flex-direction: row;
 	text-align: left;
 
@@ -369,25 +377,28 @@ img {
 /* target and target-2 very important for the java targetting */
 .target {
 
-	width: auto;
+	width: 560px;
 	height: auto;
   padding: 10px;
-  background-color: black;
+  background-color: #000000;
   border-radius: 25px;
-  border-color: white;
+  border-color: #FFFFFF;
   border-width: 5px;
+  border-style: solid;
 
 
 }
 
 .target-2 {
 	height: auto;
-  background-color: black;
+  width: 560px;
+  background-color: #000000;
   border-radius: 25px;
   border-top-style: none;
   border-left-style: solid;
   border-right-style: solid;
   border-bottom-style: solid;
+  padding: 12px;
 
 }
 
@@ -402,6 +413,16 @@ img {
   font-size: 10px;
 }
 
+p {
+  font-size: 35px;
+}
+
+.divcol {
+    display: flex;
+    flex-direction: column;
+ 
+}
+
 /* start code for desktop */
 
 @media only screen and (min-width: 600px) {
@@ -409,11 +430,13 @@ img {
 
 header, main, footer {
   width: 800px;
-  padding: 10px;
-  font-family: 'Kanit', sans-serif;
+  padding: 0px;
+
 
 
 }
+
+/* Flex Boxing Code */
 
 .group {
 	display: flex;
@@ -421,45 +444,49 @@ header, main, footer {
 
 }
 
-.menu {
-	
-	width: 100px; 
-	text-align: left;
-
-
-
-}
-
 .item {
-	display: flex;
-	flex-direction: column;
-	vertical-align: top;
+  display: flex;
+  flex-direction: column;
+  vertical-align: top;
+}
+
+.divcol {
+  display: flex;
+  flex-direction: column;
 }
 
 
-}
 
+
+/* button code */
 .menu-btn {
   height: 50px;
   width: 200px; 
-  background-color: white;
+  background-color: #FFFFFF;
   justify-content: center;
   font-weight: bolder;
   font-size: 20px;
+  color: #000000;
   transition: 1s;
 }
 
+
+
+
 .menu-btn:hover {
-  background-color: black;
-  color: white;
+  background-color: #000000;
+  color: red;
 }
+
+
 /* target and target-2 very important for the java targetting */
+
 .target {
 
  
   width: 600px;
   height: auto;
-  border-color: white;
+  border-color: #FFFFFF;
   border-width: 5px;
   border-style: solid;
 
@@ -467,7 +494,7 @@ header, main, footer {
 
 .target-2 {
 
-  background-color: black;
+  background-color: #000000;
   border-radius: 25px;
   padding: 10px;
   height: auto;
@@ -478,8 +505,27 @@ header, main, footer {
   border-left-style: none;
 }
 
-.article-js {
-  font-size: 25px;
+/* Paragraph and Header sizes */
+p {
+  font-size: 20px;
+}
+
+h1 {
+
+  font-weight: bold;
+  font-size: 70px;
+  
+}
+
+h2 {
+  font-weight: bold;
+  font-size: 45px;
+}
+
+h3 {
+  font-weight: bold;
+  font-size: 40px;
 }
 
 }
+
